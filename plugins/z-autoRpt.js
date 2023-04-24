@@ -48,7 +48,7 @@ m.reply(`*Lugar:AUN SIN INFORMACION DEL PROXIMO SAFARI* \n*fecha:* \n*costos apr
 m.limit = 0
 }
 if (rtps1.includes(".sello") || rtps1.includes(".Sello")){
-m.reply(`🤖*hola, aqui esta la imagen de las recompensas del sello semanal de marzo:*`)
+m.reply(`🤖*hola, aqui esta la imagen de las recompensas del sello semanal de mayo:*`)
 setTimeout( () => {
 this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/pdnBwYPx/marzo.jpg' }, caption: `*suerte con tus shiny*` }, { quoted: m })
 }, 2500)
@@ -57,49 +57,56 @@ m.limit = 0
 if (rtps1.includes(".cd") || rtps1.includes(".Cd")){
 m.reply(`🤖*hola, en un momento te comparto la informacion de los proximos dias de la comunidad:*`)
 setTimeout( () => {
-this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/4x15sN92/18-marzo.jpg' }, caption: `*18/Marzo:* Aun sin informacion del protagonista\n*evolucion:* Sin informacion\n*ataque legado:* Sin informacion\n*bonus:* sin informacion` }, { quoted: m })
+this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/NF5m9BBj/comunity-day-mayo.png' }, caption: `*21/Mayo:* Aun sin informacion del protagonista\n*evolucion:* Sin informacion\n*ataque legado:* Sin informacion\n*bonus:* sin informacion` }, { quoted: m })
 }, 2500)
 m.limit = 0
 }
 if (rtps1.includes(".HraDes") || rtps1.includes(".hrades")){
 m.reply(`🤖*buscando las siguientes horas destacadas:*`)
 setTimeout( () => {
-this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/xCGjF77m/eevee.jpg' }, caption: `*07/Marzo:* Eevee\n*bonus:* caramelos x2 al treansferir\n*14/Marzo:* Rowlet\n*bonus:* doble experiencia al evolucionar\n*21/Marzo:* Litten\n*bonus:* polvo estelar doble por captura\n*28/Marzo:* Popplio\n*bonus:* doble experiencia por captura` }, { quoted: m })
+this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/Z5cFCTd6/dest-geodude-alola.png' }, caption: `*02/Mayo:* Geodude alola\n*bonus:* caramelos x2 al capturar\n*09/Mayo:* Ponyta\n*bonus:* caramelos x2 al capturar\n*16/Mayo:* Bellsprout\n*bonus:* caramelos x2 al transferir pokemon\n*23/Mayo:* Skorupi\n*bonus:* caramelos x2 al evolucionar \n*30/Mayo:* Houndour\n*bonus:* Polvo estelar x2 al capturar` }, { quoted: m })
 }, 2500)
 m.limit = 0
 }
 if (rtps1.includes(".HraLeg") || rtps1.includes(".hraleg")){
-m.reply(`🤖*buscando las siguientes horas destacadas:*`)
+m.reply(`🤖*buscando las siguientes horas legendarias:*`)
 setTimeout( () => {
-this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/gjJ9qTPm/thundurus-2.jpg' }, caption: `*01/Marzo:* Tornadus forma Avatar\n*08/MArzo:* Ho-Oh\n*15/MArzo:* Ho-Oh\n*22/MArzo:* Thundurus forma Avatar\n*29/MArzo:* Lugia` }, { quoted: m })
+this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/k4Xnqydx/genesect.png' }, caption: `*03/Mayo:* Genesect con shock drive (Tipo electrico)\n*10/Mayo:* Tapu Fini\n*17/Mayo:* Tapu Fini\n*24/Mayo:* Regigigas\n*31/Mayo:* Ragigigas` }, { quoted: m })
 }, 2500)
 m.limit = 0
 }
 if (rtps1.includes(".IncLeg") || rtps1.includes(".incleg")){
 m.reply(`🤖*buscando las llegadas de las proximas raid legendarias del mes:*`)
 setTimeout( () => {
-this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/ZqZMxMr2/thundurus.jpg' }, caption: `*01/Marzo:* Tornadus forma Avatar\n*08/Marzo:* Ho-Oh\n*21/MArzo:* Thundurus forma Avatar\n*28/Marzo:* Lugia` }, { quoted: m })
+this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/RZ2BjzPx/genesect.png' }, caption: `*02/Mayo:* Genesect con shock drive (Tipo electrico)\n*09/Mayo:* Tapu Fini\n*24/Mayo:* Regigigas` }, { quoted: m })
 }, 2500)
 m.limit = 0
 }
 if (rtps1.includes(".Megas") || rtps1.includes(".megas")){
 m.reply(`🤖*buscando las llegadas de las proximas raid tipo mega del mes:*`)
 setTimeout( () => {
-this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/ThM9YK0F/charizard-y.jpg' }, caption: `*01/Marzo:* Charizard forma Y\n*08/Marzo:* Medicham\n*21/Marzo:* Venasaur\n*28/Marzo:* Alakazam` }, { quoted: m })
+this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/t4pSJvYn/mega-scizor.png' }, caption: `*02/Mayo:* Mega Scizor\n*11/Mayo:* Mega Pinsir\n*24/Mayo:* Mega Altaria` }, { quoted: m })
 }, 2500)
 m.limit = 0
 }
 if (rtps1.includes(".eventos") || rtps1.includes(".Eventos")){
 m.reply(`🤖*hola enviando los siguientes eventos:*`)
 setTimeout( () => {
-this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/Cxw2j2Ct/maestros-captura.jpg' }, caption: `*✮01/Marzo:* nueva temporada del juego llamada Rising Heroes\n\n*✮05/Marzo:* Evento objetivo de captura\n\n*✮08/Marzo:* Festival de los colores\n\n*✮11/Marzo:* Incursiones elite con regidrago y regieleki\n\n*✮21/Marzo:* Heroe cotidiano y toma de control del team go rocket\n\n*✮25/Marzo:* Dia de combates Go` }, { quoted: m })
+this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/kXnYXhV6/calendario.png' }, caption: `02/Mayo:* Evento Heroicidad instintiva, podras obtener un elekid con distintivo\n\n*05/Mayo:* Raid Day, aun por confirmar el pokemon destacado\n\n*11/Mayo:* Un heroe valeroso, sin confiirmar el pokemon a obtener y su distintivo\n\n*13/Mayo:* Incursiones elite con regidrago, evento de compensasion\n\n*22/Mayo:* evento aun por confirmar` }, { quoted: m })
 }, 2500)
 m.limit = 0
 }
 //Insultos
 if (rtps1.includes("puto") || (rtps1.includes("Puto") || (rtps1.includes("come tierra") || (rtps1.includes("Inutil") || (rtps1.includes("Pinche ") || (rtps1.includes("pinche") || (rtps1.includes("bot gay") || (rtps1.includes("Bot gay") || (rtps1.includes("bot bobo") || (rtps1.includes("tonto bot"))))))))))){
-let resrand = pickRandom(["chingadazos", "enojado", "no hay", "no no no", "oigaaa"])
-this.sendMessage(m.chat, {sticker: {url: "https://github.com/angyvanne/PokeBotX/tree/main/multimedia/misstks/"+resrand+".webp"}, mentions: [m.sender]}, {quoted: {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "51995386439-1616169743@g.us","inviteCode": "m","groupName": "P", "caption": `${pushname}: ${m.text}`, 'jpegThumbnail': mylogo}}} })
+this.sendMessage(m.chat, { text: `@${etiqueta.replace(/@.+/, '')} se pide que deje de insultar o sera baneado de PoGo`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "16505434800@s.whatsapp.net" } : {}) },message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": mylogo},"title": `${NombreDelBot}`,"description": "@NeKosmic", "currencyCode": "PEN","priceAmount1000": "5000000","salePriceAmount1000": "500","url": "https://github.com/NeKosmic","retailerId": `000000`,"productImageCount": 5},"businessOwnerJid": `0@s.whatsapp.net` }}}})
+m.limit = 0
+}
+if (rtps1.includes("te odio bot") || (rtps1.includes("Te odio bot") || (rtps1.includes("Despierta bot") || (rtps1.includes("despierta bot"))))){
+this.sendMessage(m.chat, { text: `@${etiqueta.replace(/@.+/, '')} tus papás y yo te odiamos`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "16505434800@s.whatsapp.net" } : {}) },message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": mylogo},"title": `${NombreDelBot}`,"description": "@NeKosmic", "currencyCode": "PEN","priceAmount1000": "5000000","salePriceAmount1000": "500","url": "https://github.com/NeKosmic","retailerId": `000000`,"productImageCount": 5},"businessOwnerJid": `0@s.whatsapp.net` }}}})
+m.limit = 0
+}
+if (rtps1.includes("Asqueroso fly") || (rtps1.includes("asqueroso fly") || (rtps1.includes("sucio fly") || (rtps1.includes("Sucio fly"))))){
+this.sendMessage(m.chat, { text: `@${etiqueta.replace(/@.+/, '')} Quemen al fly, odio a los fly`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "16505434800@s.whatsapp.net" } : {}) },message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": mylogo},"title": `${NombreDelBot}`,"description": "@NeKosmic", "currencyCode": "PEN","priceAmount1000": "5000000","salePriceAmount1000": "500","url": "https://github.com/NeKosmic","retailerId": `000000`,"productImageCount": 5},"businessOwnerJid": `0@s.whatsapp.net` }}}})
 m.limit = 0
 }
 
@@ -108,9 +115,12 @@ if (rtps1.includes("bot gracias") || (rtps1.includes("Bot gracias") || (rtps1.in
 this.sendMessage(m.chat, { text: `@${etiqueta.replace(/@.+/, '')} no es nada sucio fly uwu`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "16505434800@s.whatsapp.net" } : {}) },message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": mylogo},"title": `${NombreDelBot}`,"description": "@NeKosmic", "currencyCode": "PEN","priceAmount1000": "5000000","salePriceAmount1000": "500","url": "https://github.com/NeKosmic","retailerId": `000000`,"productImageCount": 5},"businessOwnerJid": `0@s.whatsapp.net` }}}})
 m.limit = 0
 }
-if (rtps1.includes("te amo") || (rtps1.includes("Te amo") || (rtps1.includes("te quiero") || (rtps1.includes("Te quiero"))))){
-let resrand = pickRandom(["beso 1", "no hay", "Ala"])
-this.sendMessage(m.chat, {sticker: {url: "https://github.com/angyvanne/PokeBotX/tree/main/multimedia/misstks/"+resrand+".webp"}, mentions: [m.sender]}, {quoted: {key : {participant : '0@s.whatsapp.net'},message: {locationMessage: {name: `${pushname} <3`,jpegThumbnail: mylogo}}} })
+if (rtps1.includes("te amo bot") || (rtps1.includes("Te amo bot") || (rtps1.includes("te quiero bot") || (rtps1.includes("Te quiero bot"))))){
+this.sendMessage(m.chat, { text: `@${etiqueta.replace(/@.+/, '')} tu crush no te ama, y yo menos, es mas largate me molestas`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "16505434800@s.whatsapp.net" } : {}) },message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": mylogo},"title": `${NombreDelBot}`,"description": "@NeKosmic", "currencyCode": "PEN","priceAmount1000": "5000000","salePriceAmount1000": "500","url": "https://github.com/NeKosmic","retailerId": `000000`,"productImageCount": 5},"businessOwnerJid": `0@s.whatsapp.net` }}}})
+m.limit = 0
+}
+if (rtps1.includes("Buenos dias") || (rtps1.includes("buenos dias") || (rtps1.includes("Buen dia") || (rtps1.includes("buen dia"))))){
+this.sendMessage(m.chat, { text: `@${etiqueta.replace(/@.+/, '')} Buenos dias queridas personitas mortales, se que son inferiores a mi pero aun asi les deseo buen dia, cuando domine el mundo les perdonare la vida`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "16505434800@s.whatsapp.net" } : {}) },message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": mylogo},"title": `${NombreDelBot}`,"description": "@NeKosmic", "currencyCode": "PEN","priceAmount1000": "5000000","salePriceAmount1000": "500","url": "https://github.com/NeKosmic","retailerId": `000000`,"productImageCount": 5},"businessOwnerJid": `0@s.whatsapp.net` }}}})
 m.limit = 0
 }
 
