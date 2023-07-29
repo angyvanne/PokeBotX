@@ -33,20 +33,39 @@ m.limit = 0
 }
 }
 //
-if (rtps1.includes(".Pokebot") || rtps1.includes(".pokebot")){
-m.reply(`🤖*hola, gracias por usar el bot, te comparto la lista de comandos (RECUERDA PONER UN . ANTES DE CADA COMANDO):*`)
-setTimeout( () => {
-m.reply(`*.Safari o .safari:* Informacion de los proximos safari zone\n\n*.sello o .Sello:* Informacion de los pokemon que pueden salir de recompensa semanal\n\n*.cd o .Cd:* informacion de los proximos dias de la comunidad\n\n*.HraDes o .hrades:* informacion de las proximas horas destacadas\n\n*.HraLeg o .hraleg:* informacion de las proximas horas legendarias*\n\n*.incleg o .IncLeg:* Informacion de los dias de cambio de incursiones legendarias\n\n.Megas o .megas:* Informacion del dia de cambio de mega incursiones\n\n*.eentos o .Eventos:* enlista los proximos eventos en el juego\n\n*.sticker:* usalo para convertir una imagen en sticker, tambien funciona con videos de menos de 10 segundos de duracion. 😎🤝`)
-}, 2500)
-m.limit = 0
+if (rtps1.includes(".Pokebot") || rtps1.includes(".pokebot")) {
+    m.reply(`🤖*Hola, gracias por usar el bot. Aquí tienes la lista de comandos (RECUERDA PONER UN . ANTES DE CADA COMANDO):*`)
+    setTimeout(() => {
+        m.reply(`*Comando* | *Descripción*\n` +
+                `--------------------------------\n` +
+                `*.Safari o .safari* | Información de los próximos Safari Zone\n` +
+                `*.sello o .Sello* | Información de los Pokémon que pueden salir de recompensa semanal\n` +
+                `*.cd o .Cd* | Información de los próximos días de la comunidad\n` +
+                `*.HraDes o .hrades* | Información de las próximas horas destacadas\n` +
+                `*.HraLeg o .hraleg* | Información de las próximas horas legendarias\n` +
+                `*.incleg o .IncLeg* | Información de los días de cambio de incursiones legendarias\n` +
+                `*.Megas o .megas* | Información del día de cambio de mega incursiones\n` +
+                `*.eentos o .Eventos* | Enlista los próximos eventos en el juego\n` +
+                `*.sticker* | Úsalo para convertir una imagen en sticker, también funciona con videos de menos de 10 segundos de duración. 😎🤝`)
+    }, 2500)
+    m.limit = 0
 }
-if (rtps1.includes(".Safari") || rtps1.includes(".safari")){
-m.reply(`🤖*hola, en un momento te comparto la informacion de los proximos safaris zone:*`)
-setTimeout( () => {
-m.reply(`*Lugar:* \n➡️04-06/Agosto Oasaka y Londres \n➡️18-20 Nueva York \n\n*costos aproximados:* \n➡️ *Osaka:* Agotado \n➡️ *Londres:* 27 libras esterlinas o 600 pesos mexicanos aproximadamente \n➡️ *Nueva York:* 25 dolares o 450 pesos mexicanos aproximadamente \n\n*Cordenadas, por si eres un sucio fly:* \n➡️ proximamente te dare las cordenadas😎🤝`)
-}, 2500)
-m.limit = 0
+
+if (rtps1.includes(".Safari") || rtps1.includes(".safari")) {
+    m.reply(`🤖*Hola, en un momento te comparto la información de los próximos Safari Zone:*`)
+    setTimeout(() => {
+        m.reply(`*Lugar* | *Fechas* | *Costos aproximados*\n` +
+                `--------------------------------------\n` +
+                `*Osaka* | 04-06 Agosto | Agotado\n` +
+                `*Londres* | 04-06 Agosto | 27 libras esterlinas o 600 pesos mexicanos aprox.\n` +
+                `*Nueva York* | 18-20 Agosto | 25 dólares o 450 pesos mexicanos aprox.\n` +
+                `\n*Cordenadas (por si eres un sucio fly)*\n` +
+                `--------------------------------\n` +
+                `Proximamente te daré las coordenadas 😎🤝`)
+    }, 2500)
+    m.limit = 0
 }
+
 if (rtps1.includes(".sello") || rtps1.includes(".Sello")){
 m.reply(`🤖*hola, aqui esta la imagen de las recompensas del sello semanal de mayo:*`)
 setTimeout( () => {
