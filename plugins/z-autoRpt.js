@@ -80,42 +80,102 @@ this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/qqmHcgYt/CD.png' }
 }, 2500)
 m.limit = 0
 }
-if (rtps1.includes(".HraDes") || rtps1.includes(".hrades")){
-m.reply(`🤖*buscando las siguientes horas destacadas:*`)
-setTimeout( () => {
-this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/k490kxP6/hora-des-1.png' }, caption: `*📆06/Junio:* ➡️ Krabby, Kabuto, Corphish, Clauncher, Crabrawler\n*bonus:* ➡️ x3 PX por captura\n*📆 13/Junio:* ➡️ Binacle\n*bonus:* ➡️ x2 Caramelos por captura\n*📆 20/Junio:* ➡️ Sunkern\n*bonus:* ➡️ x2 Caramelos por transferencia\n*📆 27/Junio:* ➡️ Doduo\n*bonus:* ➡️ x2 PX por evolución` }, { quoted: m })
-}, 2500)
-m.limit = 0
+if (rtps1.includes(".HraDes") || rtps1.includes(".hrades")) {
+    m.reply(`🤖*Buscando las siguientes horas destacadas:*`)
+    setTimeout(() => {
+        this.sendMessage(m.chat, {
+            image: {url: 'https://i.postimg.cc/k490kxP6/hora-des-1.png'},
+            caption: `*Fecha* | *Pokémon* | *Bonus*\n` +
+                     `--------------------------------------\n` +
+                     `*06/Junio* | Krabby, Kabuto, Corphish, Clauncher, Crabrawler | x3 PX por captura\n` +
+                     `*13/Junio* | Binacle | x2 Caramelos por captura\n` +
+                     `*20/Junio* | Sunkern | x2 Caramelos por transferencia\n` +
+                     `*27/Junio* | Doduo | x2 PX por evolución`
+        }, { quoted: m })
+    }, 2500)
+    m.limit = 0
 }
-if (rtps1.includes(".HraLeg") || rtps1.includes(".hraleg")){
-m.reply(`🤖*buscando las siguientes horas legendarias:*`)
-setTimeout( () => {
-this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/MGJNQyTP/legend-1.png' }, caption: `*07 y 14 de Junio:* ➡️treio del lago \n*21 y 28 de junio:* ➡️Nihilego (estreno shiny)` }, { quoted: m })
-}, 2500)
-m.limit = 0
+
+if (rtps1.includes(".HraLeg") || rtps1.includes(".hraleg")) {
+    m.reply(`🤖*Buscando las siguientes horas legendarias:*`)
+    setTimeout(() => {
+        this.sendMessage(m.chat, {
+            image: {url: 'https://i.postimg.cc/MGJNQyTP/legend-1.png'},
+            caption: `*Fechas* | *Pokémon*\n` +
+                     `--------------------------------------\n` +
+                     `*07 y 14 de Junio* | Treio del lago\n` +
+                     `*21 y 28 de Junio* | Nihilego (estreno shiny)`
+        }, { quoted: m })
+    }, 2500)
+    m.limit = 0
 }
-if (rtps1.includes(".IncLeg") || rtps1.includes(".incleg")){
-m.reply(`🤖*buscando las llegadas de las proximas raid legendarias:*`)
-setTimeout( () => {
-this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/MGJNQyTP/legend-1.png' }, caption: `*📆 01-15/Junio:* Azelf, Uxie y Mesprit (apareciendo en su region)\n*📆 15-29/Junio:* Nihilego (estreno shiny)\n*📆29/Junio-6/julio:* Heatran\n*📆6-13/julio:* Articuno, Zapdos y Moltres\n*📆13-25/julio:* Ragieleki\n*📆25/julio-04/agosto:* Ragidrago\n*📆04-16/agosto:* Cresselia\n*📆16-23/Agosto:* Sorpresa` }, { quoted: m })
-}, 2500)
-m.limit = 0
+
+if (rtps1.includes(".IncLeg") || rtps1.includes(".incleg")) {
+    m.reply(`🤖*Buscando las llegadas de las próximas raid legendarias:*`)
+    setTimeout(() => {
+        this.sendMessage(m.chat, {
+            image: {url: 'https://i.postimg.cc/MGJNQyTP/legend-1.png'},
+            caption: `*Fechas* | *Pokémon*\n` +
+                     `--------------------------------------\n` +
+                     `*01-15/Junio* | Azelf, Uxie y Mesprit (apareciendo en su región)\n` +
+                     `*15-29/Junio* | Nihilego (estreno shiny)\n` +
+                     `*29/Junio-6/Julio* | Heatran\n` +
+                     `*6-13/Julio* | Articuno, Zapdos y Moltres\n` +
+                     `*13-25/Julio* | Ragieleki\n` +
+                     `*25/Julio-04/Agosto* | Ragidrago\n` +
+                     `*04-16/Agosto* | Cresselia\n` +
+                     `*16-23/Agosto* | Sorpresa`
+        }, { quoted: m })
+    }, 2500)
+    m.limit = 0
 }
-if (rtps1.includes(".Megas") || rtps1.includes(".megas")){
-m.reply(`🤖*buscando las llegadas de las proximas megaraid:*`)
-setTimeout( () => {
-this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/kXtTvBLk/mega-swamperto.png' }, caption: `*📆 01-15/Junio:* Mega Swampert\n*📆 15-29/Junio:* Mega Sceptile\n*📆29/Junio-6/julio:* Mega desconocida\n*📆6-13/julio:* Mega Blastoise\n*📆13-25/julio:* Mega Blaziken\n*📆25/julio-04/agosto:* Mega Tyranitar\n*📆04-16/agosto:* Mega Gyarados\n*📆16-23/Agosto:* Mega Salamance ` }, { quoted: m })
-}, 2500)
-m.limit = 0
+
+if (rtps1.includes(".Megas") || rtps1.includes(".megas")) {
+    m.reply(`🤖*Buscando las llegadas de las próximas megaraid:*`)
+    setTimeout(() => {
+        this.sendMessage(m.chat, {
+            image: {url: 'https://i.postimg.cc/kXtTvBLk/mega-swamperto.png'},
+            caption: `*Fechas* | *Mega Pokémon*\n` +
+                     `--------------------------------------\n` +
+                     `*01-15/Junio* | Mega Swampert\n` +
+                     `*15-29/Junio* | Mega Sceptile\n` +
+                     `*29/Junio-6/Julio* | Mega desconocida\n` +
+                     `*6-13/Julio* | Mega Blastoise\n` +
+                     `*13-25/Julio* | Mega Blaziken\n` +
+                     `*25/Julio-04/Agosto* | Mega Tyranitar\n` +
+                     `*04-16/Agosto* | Mega Gyarados\n` +
+                     `*16-23/Agosto* | Mega Salamance`
+        }, { quoted: m })
+    }, 2500)
+    m.limit = 0
 }
-if (rtps1.includes(".eventos") || rtps1.includes(".Eventos")){
-m.reply(`🤖*hola enviando los siguientes eventos:*`)
-setTimeout( () => {
-this.sendMessage(m.chat, { image: {url: 'https://i.postimg.cc/rpqgTgzk/todo-junio.jpg' }, caption: `📆 03/Junio:* Dia de investigacion "buscando Oro"\n➡️ de 14:00 a 17:00hrs\n➡️ Encuentros con Caterpie, Magikarp, Nosepass, Sableye y Barboach al realizar investigaciones de campo\n➡️ Probabilidad de shiny aumentadas para los pokemon que aparescan de misiones de campo \n➡️ Spawn dalvaje de weedle, Bellsprout, Poochyena, Buizel, Tympole, Shelmet, Stufful \n➡️ Si tienes suerte podrias encontrar a Lickitung y a azumarril salvajes \n➡️ Investigacion de 1 dolar (si compran monedas con @RadaAsh sale gratis), recuerda reclamar las recompensas de la mision antes de las 17:00hrs \n➡️ Bonus donde las pokeparadas se volveran doradas donde recibiras monedas de Gimmighoul e items de mas al girar pokeparadas (no se podra obtener a Gimmighoul) \n\n*📆 06-12/Junio:* Festival acuatico\n➡️ Sandygast y Palossand llegan al juego\n➡️ Desafío Global de 300 millones de buenos lanzamientos (más Caramelos y Caramelos XL por lanzamientos al superarlo)\n➡️ Pokémon salvajes: Tentacool, Shellder, Krabby, Exeggutor-A, Horsea, Staryu, Marill, Wingull, Wailmer, Spheal, Finneon, Dwebble, Frillish, Clauncher, Mantine, Popplio\n
-➡️ Tareas de investigación: Lapras con bufanda, Frillish, Binacle, Clauncher, Sandygast\n
-➡️ Los Módulos Cebo Lluviosos duran x4 veces\n➡️ Investigación temporal de pago por 5€ con pose surfera y Pokémon \n\n*📆 16-25/Junio:* Solsticio en el Horizonte + Toma de Control del Team GO Rocket\n\n*📆 29/Junio-2/Julio:* Llamas siniestras` }, { quoted: m })
-}, 2500)
-m.limit = 0
+
+if (rtps1.includes(".eventos") || rtps1.includes(".Eventos")) {
+    m.reply(`🤖*Hola, enviando los siguientes eventos:*`)
+    setTimeout(() => {
+        this.sendMessage(m.chat, {
+            image: {url: 'https://i.postimg.cc/rpqgTgzk/todo-junio.jpg'},
+            caption: `*Fecha* | *Evento* | *Detalles*\n` +
+                     `--------------------------------------\n` +
+                     `*03/Junio* | Día de investigación "Buscando Oro" | - Encuentros con Caterpie, Magikarp, Nosepass, Sableye y Barboach al realizar investigaciones de campo.\n` +
+                     `| | - Probabilidad de shiny aumentada para los Pokémon que aparezcan de misiones de campo.\n` +
+                     `| | - Spawn salvaje de Weedle, Bellsprout, Poochyena, Buizel, Tympole, Shelmet, Stufful.\n` +
+                     `| | - Posibilidad de encontrar a Lickitung y Azumarill salvajes.\n` +
+                     `| | - Investigación de 1 dólar con recompensas, reclamar antes de las 17:00hrs.\n` +
+                     `| | - Bonus de pokeparadas doradas con Gimmighoul y más items.\n` +
+                     `\n*06-12/Junio* | Festival Acuático | - Sandygast y Palossand llegan al juego.\n` +
+                     `| | - Desafío Global de 300 millones de buenos lanzamientos (más Caramelos y Caramelos XL por lanzamientos al superarlo).\n` +
+                     `| | - Pokémon salvajes: Tentacool, Shellder, Krabby, Exeggutor-A, Horsea, Staryu, Marill, Wingull, Wailmer, Spheal, Finneon, Dwebble, Frillish, Clauncher, Mantine, Popplio.\n` +
+                     `| | - Tareas de investigación: Lapras con bufanda, Frillish, Binacle, Clauncher, Sandygast.\n` +
+                     `| | - Los Módulos Cebo Lluviosos duran x4 veces.\n` +
+                     `| | - Investigación temporal de pago por 5€ con pose surfera y Pokémon.\n` +
+                     `\n*16-25/Junio* | Solsticio en el Horizonte + Toma de Control del Team GO Rocket | - Detalles próximamente.\n` +
+                     `\n*29/Junio-2/Julio* | Llamas Siniestras | - Detalles próximamente.`
+        }, { quoted: m })
+    }, 2500)
+    m.limit = 0
+}
+
 }
 //Insultos
 if (rtps1.includes("puto") || (rtps1.includes("Puto") || (rtps1.includes("come tierra") || (rtps1.includes("Inutil") || (rtps1.includes("Pinche ") || (rtps1.includes("pinche") || (rtps1.includes("bot gay") || (rtps1.includes("Bot gay") || (rtps1.includes("bot bobo") || (rtps1.includes("tonto bot"))))))))))){
@@ -417,4 +477,5 @@ this.sendMessage(m.chat, {sticker: fs.readFileSync('./multimedia/misstks/teslago
 return !0
 }
 
+export default handler
 export default handler
