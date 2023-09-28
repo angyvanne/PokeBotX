@@ -178,32 +178,41 @@ if (rtps1.includes(".eventos") || rtps1.includes(".Eventos")) {
 
 }
 //Insultos
-if (rtps1.includes("puto") || (rtps1.includes("Puto") || (rtps1.includes("come tierra") || (rtps1.includes("Inutil") || (rtps1.includes("Pinche ") || (rtps1.includes("pinche") || (rtps1.includes("bot gay") || (rtps1.includes("Bot gay") || (rtps1.includes("bot bobo") || (rtps1.includes("tonto bot"))))))))))){
-this.sendMessage(m.chat, { text: `@${etiqueta.replace(/@.+/, '')} se pide que deje de insultar o sera baneado de PoGo`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "16505434800@s.whatsapp.net" } : {}) },message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": mylogo},"title": `${NombreDelBot}`,"description": "@NeKosmic", "currencyCode": "PEN","priceAmount1000": "5000000","salePriceAmount1000": "500","url": "https://github.com/NeKosmic","retailerId": `000000`,"productImageCount": 5},"businessOwnerJid": `0@s.whatsapp.net` }}}})
-m.limit = 0
-}
-if (rtps1.includes("te odio bot") || (rtps1.includes("Te odio bot") || (rtps1.includes("Despierta bot") || (rtps1.includes("despierta bot"))))){
-this.sendMessage(m.chat, { text: `@${etiqueta.replace(/@.+/, '')} tus papás y yo te odiamos`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "16505434800@s.whatsapp.net" } : {}) },message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": mylogo},"title": `${NombreDelBot}`,"description": "@NeKosmic", "currencyCode": "PEN","priceAmount1000": "5000000","salePriceAmount1000": "500","url": "https://github.com/NeKosmic","retailerId": `000000`,"productImageCount": 5},"businessOwnerJid": `0@s.whatsapp.net` }}}})
-m.limit = 0
-}
-if (rtps1.includes("Asqueroso fly") || (rtps1.includes("asqueroso fly") || (rtps1.includes("sucio fly") || (rtps1.includes("Sucio fly"))))){
-this.sendMessage(m.chat, { text: `@${etiqueta.replace(/@.+/, '')} Quemen al fly, odio a los fly`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "16505434800@s.whatsapp.net" } : {}) },message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": mylogo},"title": `${NombreDelBot}`,"description": "@NeKosmic", "currencyCode": "PEN","priceAmount1000": "5000000","salePriceAmount1000": "500","url": "https://github.com/NeKosmic","retailerId": `000000`,"productImageCount": 5},"businessOwnerJid": `0@s.whatsapp.net` }}}})
-m.limit = 0
+
+// Lista de frases de respuesta a insultos
+const frasesRespuesta = [
+  "Señor deje de insultar o lo tendre que agarrar a golpes.",
+  "Sabemos que nadie te quiere pero por favor deja de insultar.",
+  "Lo siento pero me programaron para respetar a personas de tu edad, de no ser asi contestaria a tu insulto.",
+  "Si sigues insultando te voy a dar ban.",
+  "Te insultaría, pero luego tendría que explicarte el insulto, así que dejémoslo así.",
+  "Cuál es el parentesco entre tus padres?... o por que insultas asi?",
+  "Esperaba una conversación racional, pero parece que no hay nadie alrededor para tenerla.",
+  "Eres el niño del poster que promovía el aborto legal verdad?",
+  "Meteré tus opiniones en mi cuenta bancaria, para ver si con el tiempo me generan algún interés.",
+  "Recuerda que eres especial pero eso no te da el derecho a insultar a la gente en este chat.",
+  "Sigue hablando por favor. Bostezar es mi manera de demostrar cuánto me interesa lo que tienes que decir."
+];
+
+// Función para responder a los insultos
+function responderInsultos(m) {
+  // Obtenemos la primera frase de la lista
+  const frase = frasesRespuesta[Math.floor(Math.random() * frasesRespuesta.length)];
+
+  // Enviamos la respuesta al usuario
+  m.reply(frase);
 }
 
-//Simp bot gaaa :u
-if (rtps1.includes("bot gracias") || (rtps1.includes("Bot gracias") || (rtps1.includes("gracias bot") || (rtps1.includes("Gracias bot"))))){
-this.sendMessage(m.chat, { text: `@${etiqueta.replace(/@.+/, '')} no es nada sucio fly uwu`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "16505434800@s.whatsapp.net" } : {}) },message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": mylogo},"title": `${NombreDelBot}`,"description": "@NeKosmic", "currencyCode": "PEN","priceAmount1000": "5000000","salePriceAmount1000": "500","url": "https://github.com/NeKosmic","retailerId": `000000`,"productImageCount": 5},"businessOwnerJid": `0@s.whatsapp.net` }}}})
-m.limit = 0
-}
-if (rtps1.includes("te amo bot") || (rtps1.includes("Te amo bot") || (rtps1.includes("te quiero bot") || (rtps1.includes("Te quiero bot"))))){
-this.sendMessage(m.chat, { text: `@${etiqueta.replace(/@.+/, '')} tu crush no te ama, y yo menos, es mas largate me molestas`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "16505434800@s.whatsapp.net" } : {}) },message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": mylogo},"title": `${NombreDelBot}`,"description": "@NeKosmic", "currencyCode": "PEN","priceAmount1000": "5000000","salePriceAmount1000": "500","url": "https://github.com/NeKosmic","retailerId": `000000`,"productImageCount": 5},"businessOwnerJid": `0@s.whatsapp.net` }}}})
-m.limit = 0
-}
-if (rtps1.includes("Buenos dias") || (rtps1.includes("buenos dias") || (rtps1.includes("Buen dia") || (rtps1.includes("buen dia"))))){
-this.sendMessage(m.chat, { text: `@${etiqueta.replace(/@.+/, '')} Buenos dias queridas personitas mortales, se que son inferiores a mi pero aun asi les deseo buen dia, cuando domine el mundo les perdonare la vida`, mentions: [m.sender] }, {quoted: {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "16505434800@s.whatsapp.net" } : {}) },message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": mylogo},"title": `${NombreDelBot}`,"description": "@NeKosmic", "currencyCode": "PEN","priceAmount1000": "5000000","salePriceAmount1000": "500","url": "https://github.com/NeKosmic","retailerId": `000000`,"productImageCount": 5},"businessOwnerJid": `0@s.whatsapp.net` }}}})
-m.limit = 0
-}
+// Código principal
+
+handler.all = async function(m) {
+  // ...
+
+  // Si el mensaje contiene un insulto
+  if (m.text.includes("puto") || m.text.includes("come tierra") || m.text.includes("Inutil") || m.text.includes("basura") || m.text.includes("basura")) {
+    responderInsultos(m);
+  }
+};
 
 //Si 🧐//
 if (rtps2.includes("uwu")){
@@ -240,35 +249,40 @@ this.sendMessage(m.chat, {sticker: {url: "https://raw.githubusercontent.com/NeKo
 m.limit = 0
 }
 
-//Fuertes insultos :v
-if (rtps2.includes("tonto")){
-m.reply(`*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*ᵀᵒⁿᵗᵒ*_`)
-m.limit = 0
+// Lista de frases de respuesta a insultos para fly
+const frasesRespuesta = [
+  "asi que es fly, permiteme, alguien sabe su usuario para avisarle a niantic???.",
+  "conosco a una persona de niantic que quiere la informacion de ese sucio fly.",
+  "señor fly, deje de flojear y salga a jugar.",
+  "asi que el es un sucio fly, le dare ban del grupo por tramposo.",
+  "sabes, odio a los tramposos, si me dices donde encuentro a ese fly asqueroso puedo deshacerme de el.",
+  "que asco hay un fly en el grupo",
+  "pemse que todos eran legales en el grupo, que feo que exita ese asqueroso fly.",
+  "disculpa al fly, es que no le dieron vitaminas de chiquito y por eso es un tramposo",
+  "asi que es un sucio fly, hay que golpearlo",
+  "matemos al fly.",
+];
+
+// Función para responder a los insultos
+function responderInsultos(m) {
+  // Obtenemos la primera frase de la lista
+  const frase = frasesRespuesta[Math.floor(Math.random() * frasesRespuesta.length)];
+
+  // Enviamos la respuesta al usuario
+  m.reply(frase);
 }
-if (rtps2.includes("bobo")){
-m.reply(`*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*ᴮᵒᵇᵒ*_`)
-m.limit = 0
-}
-if (rtps2.includes("idiota")){
-m.reply(`*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*ᴾᵃᵖᵃⁿᵃᵗᵃˢ*_`)
-m.limit = 0
-}
-if (rtps2.includes("perseve")){
-m.reply(`*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*ᴾᵉʳˢᵉᵛᵉ* _`)
-m.limit = 0 
-}
-if (rtps2.includes("pelele")){
-m.reply(`*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*ᴾᵉˡᵉˡᵉ*_`)
-m.limit = 10
-}
-if (rtps2.includes("pamplinas")){
-m.reply(`*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*ᴾᵃᵐᵖˡᶦⁿᵃˢ*_`)
-m.limit = 1
-}
-if (rtps2.includes("chispas")){
-m.reply(`*ˢᵉ ᵈᵉᵗᵉᶜᵗᵒ ᵘⁿ ᶦⁿˢᵘˡᵗᵒ ᵐᵘʸ ᶠᵘᵉʳᵗᵉ*\n_*ᶜʰᶦˢᵖᵃˢ*_`)
-m.limit = 0
-}
+
+// Código principal
+
+handler.all = async function(m) {
+  // ...
+
+  // Si el mensaje contiene un insulto
+  if (m.text.includes("puto") || m.text.includes("come tierra") || m.text.includes("Inutil") || m.text.includes("basura")) {
+    responderInsultos(m);
+  }
+};
+
 
 //fakemsj - no es real . _.
 if (rtps1.includes("pasen porno") || (rtps1.includes("Pasen porno") || (rtps1.includes("zelda") || (rtps1.includes("nopor"))))){
