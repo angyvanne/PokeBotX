@@ -1,7 +1,7 @@
 {
   "name": "Simple-Whatsapp-Bot",
   "description": "Un botcito para dominarlos a todos...",
-  "repository": "https://github.com/NeKosmic/NK-BOT-MD/",
+  "repository": "https://github.com/angyvanne/PokeBotX/",
   "logo": "https://i.ibb.co/VjF33JW/images-8.jpg",
   "keywords": ["nodejs", "whatsapp-bot", "multi-device"],
   "buildpacks": [
